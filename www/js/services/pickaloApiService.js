@@ -1,6 +1,6 @@
 app.service('PickaloApiService', ['$http', '$q',
     function ($http, $q) {
-        var server = 'http://192.168.20.34:3000';
+        var server = 'http://67e90eb3.ngrok.com';
         var q = $q;
         return {
             postForm: function (form) {
