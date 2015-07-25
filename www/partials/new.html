@@ -10,8 +10,20 @@
     <button class="button button-block button-positive" ng-click="openCamera()">
       New picture
     </button>
-    <div class="img-grid-item" ng-repeat="image in images">
-      <img ng-src="{{image.imgUrl}}">
+
+    <div class="row" ng-repeat="image in images" ng-if="$index % 2 === 0">
+        <div class="col col-50" ng-if="$index < images.length">
+            <img ng-src="{{images[$index].imgUrl}}" width="100%" />
+        </div>
+        <div class="col col-50" ng-if="$index + 1 < images.length">
+            <img ng-src="{{images[$index + 1].imgUrl}}" width="100%" />
+        </div>
+        <div class="col col-50" ng-if="$index + 2 < images.length">
+            <img ng-src="{{images[$index + 2].src}}" width="100%" />
+        </div>
+        <div class="col col-50" ng-if="$index + 3 < images.length">
+            <img ng-src="{{images[$index + 3].imgUrl}}" width="100%" />
+        </div>
     </div>
   </ion-content>
 </ion-view>

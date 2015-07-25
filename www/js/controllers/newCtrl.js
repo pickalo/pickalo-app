@@ -1,30 +1,20 @@
 app.controller("newCtrl", function($scope, $ionicHistory, $ionicPlatform, $cordovaCamera) {
+  $scope.images = [];
+
   $scope.goBack = function() {
     $ionicHistory.goBack();
   };
 
   $scope.openCamera = function() {
-    $scope.images = [
-      {
-        imgUrl: "http://i521.photobucket.com/albums/w331/poli_66/cage-1.jpg"
-      },
-      {
-        imgUrl: "http://i521.photobucket.com/albums/w331/poli_66/cage-1.jpg"
-      },
-      {
-        imgUrl: "http://i521.photobucket.com/albums/w331/poli_66/cage-1.jpg"
-      },
-      {
-        imgUrl: "http://i521.photobucket.com/albums/w331/poli_66/cage-1.jpg"
-      }
-    ];
-
     $ionicPlatform.ready(function() {
       var options = {
         quality: 50,
+        destinationType: Camera.DestinationType.FILE_URI,
+        allowEdit: true,
+        encodingType: Camera.EncodingType.JPEG,
         targetWidth: 300,
         targetHeight: 300,
-        destinationType: Camera.DestinationType.FILE_URI,
+        popoverOptions: CameraPopoverOptions,
         saveToPhotoAlbum: false
       };
 
