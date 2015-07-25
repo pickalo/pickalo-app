@@ -1,0 +1,17 @@
+<ion-view>
+  <ion-nav-bar>
+    <ion-nav-buttons side="left">
+      <button class="button-clear" ng-click="goBack()">
+        <i class="ion-chevron-left"></i>
+      </button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+  <ion-content>
+    <button class="button button-block button-positive" ng-click="openCamera()">
+      New picture
+    </button>
+    <div class="img-grid-item" ng-repeat="image in images">
+      <img ng-src="{{image.imgUrl}}">
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,17 @@
+
+.main-menu-item {
+  height: 50vh;
+  font-size: 5vh;
+  text-align: center;
+  padding-top: 22.5vh;
+}
+
+.main-menu-item--positive {
+  background-color: $positive;
+  border: none;
+}
+
+.main-menu-item--positive:hover {
+  background-color: lighten($positive, 10);
+  border: none;
+}
