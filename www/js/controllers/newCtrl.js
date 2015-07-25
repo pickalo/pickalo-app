@@ -1,4 +1,4 @@
-app.controller("newCtrl", function($scope, $ionicHistory, $ionicPlatform, $cordovaCamera, $cordovaFileTransfer, PickaloApiService) {
+app.controller("newCtrl", function($scope, $rootScope, $state, $ionicHistory, $ionicPlatform, $cordovaCamera, $cordovaFileTransfer, PickaloApiService) {
   $scope.images = [];
   $scope.form = {};
 
@@ -39,7 +39,9 @@ app.controller("newCtrl", function($scope, $ionicHistory, $ionicPlatform, $cordo
       })
     };
     PickaloApiService.postForm(form).then(function(response) {
-      alert(response);
+      $rootScope.link = response.link;
+      $rootScope.pickalo_id = response.id;
+      $state.go('link');
     });
   };
 });

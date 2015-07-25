@@ -1,5 +1,4 @@
-
-<ion-view>
+<ion-view ng-init="init()">
   <ion-nav-bar>
     <ion-nav-buttons side="left">
       <button class="button-clear" ng-click="goBack()">
@@ -8,13 +7,18 @@
     </ion-nav-buttons>
   </ion-nav-bar>
   <ion-content>
-      <div class="item main-menu-item main-menu-item--positive">
-        <h2><strong>Pickalo Created!</strong></h2><i class="icon ion-images" style="color:black"></i>
-      </div>
+    <div class="item main-menu-item main-menu-item--positive">
+      <h2>
+        <strong>Pickalo Created!</strong>
+      </h2><i class="icon ion-images" style="color:black"></i>
+    </div>
 
-    <input ng-model="pickalo.link" type="text" placeholder="type here...">
+    <label class="item item-input item-stacked-label">
+      <span class="input-label">Question</span>
+      <input ng-model="pickalo.link" type="text" placeholder="type here...">
+    </label>
 
-    <a href="#/link" class="button button-block button-energized" >
+    <a href="#/results" class="button button-block button-energized">
       <strong> RESULTS </strong>
     </a>
 

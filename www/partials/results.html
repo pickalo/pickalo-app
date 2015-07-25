@@ -7,29 +7,23 @@
     </ion-nav-buttons>
   </ion-nav-bar>
   <ion-content>
-    <div class="button button-block button-positive" >
+    <div class="button button-block button-positive" ng-click="getResults()">
       <strong>REFRESH RESULTS</strong>
     </div>
 
-  
 
 
-    <div class="button button-block button-energized" >
+
+    <div class="button button-block button-energized">
       <strong> * TOP CHOICE * </strong>
     </div>
 
-    <ul>
-      <li>
-        <img ng-src="result.imgurl">
-      </li>
-    </ul>
+    <img ng-src="{{result.image_url}}" width="100">
 
 
-    <div class="button button-block button-calm" >
-      <strong>{{result.voted}} votes out of {{result.totalvotes}}</strong>
+    <div class="button button-block button-calm">
+      <strong>{{result.votes}} votes!</strong>
     </div>
 
   </ion-content>
 </ion-view>
-
-
