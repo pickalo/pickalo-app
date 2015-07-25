@@ -1,5 +1,6 @@
-app.controller("newCtrl", function($scope, $ionicHistory, $ionicPlatform, $cordovaCamera) {
+app.controller("newCtrl", function($scope, $ionicHistory, $ionicPlatform, $cordovaCamera, PickaloApiService) {
   $scope.images = [];
+  $scope.form = {};
 
   $scope.goBack = function() {
     $ionicHistory.goBack();
@@ -25,6 +26,17 @@ app.controller("newCtrl", function($scope, $ionicHistory, $ionicPlatform, $cordo
       }, function(err) {
         console.error(error);
       });
+    });
+  };
+
+  $scope.postForm = function() {
+    alert($scope.form.question);
+    var form = {
+      question: $scope.form.question,
+      images: $scope.images
+    };
+    PickaloApiService.postForm(form).then(function(response) {
+      alert(response);
     });
   };
 });
