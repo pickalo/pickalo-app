@@ -21,7 +21,20 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 @import "./custom/main-menu";
+@import "./custom/form";
 
 ion-content {
   background-color: $stable;
+
+  label.item {
+    border: none;
+  }
+
+  .input-label {
+    color: white;
+  }
+
+  input:focus {
+    color: white;
+  }
 }

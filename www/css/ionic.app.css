@@ -7697,5 +7697,16 @@ a.button {
   background-color: #56bf6e;
   border: none; }
 
+.form-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%; }
+
 ion-content {
   background-color: #3c3e87; }
+  ion-content label.item {
+    border: none; }
+  ion-content .input-label {
+    color: white; }
+  ion-content input:focus {
+    color: white; }
