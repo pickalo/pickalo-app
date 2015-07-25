@@ -31,6 +31,24 @@ app.config(function($stateProvider, $urlRouterProvider) {
     controller: 'mainCtrl'
   })
 
+  $stateProvider.state('old', {
+    url: '/old',
+    templateUrl: 'partials/old.html',
+    controller: 'oldCtrl'
+  });
+
+  $stateProvider.state('results', {
+    url: '/results',
+    templateUrl: 'partials/results.html',
+    controller: 'resultsCtrl'
+  });
+
+  $stateProvider.state('link', {
+    url: '/link',
+    templateUrl: 'partials/link.html',
+    controller: 'linkCtrl'
+  });
+
   $stateProvider.state('new', {
     url: '/new',
     templateUrl: 'partials/new.html',

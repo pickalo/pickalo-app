@@ -1,0 +1,35 @@
+<ion-view>
+  <ion-nav-bar>
+    <ion-nav-buttons side="left">
+      <button class="button-clear" ng-click="goBack()">
+        <i class="ion-chevron-left"></i>
+      </button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+  <ion-content>
+    <div class="button button-block button-positive" >
+      <strong>REFRESH RESULTS</strong>
+    </div>
+
+  
+
+
+    <div class="button button-block button-energized" >
+      <strong> * TOP CHOICE * </strong>
+    </div>
+
+    <ul>
+      <li>
+        <img ng-src="result.imgurl">
+      </li>
+    </ul>
+
+
+    <div class="button button-block button-calm" >
+      <strong>{{result.voted}} votes out of {{result.totalvotes}}</strong>
+    </div>
+
+  </ion-content>
+</ion-view>
+
+
