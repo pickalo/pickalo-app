@@ -1,9 +1,9 @@
 
 .main-menu-item {
-  height: 50vh;
+  height: 100vh;
   font-size: 5vh;
   text-align: center;
-  padding-top: 22.5vh;
+  padding-top: 45vh;
 }
 
 .main-menu-item--positive {
@@ -14,4 +14,8 @@
 .main-menu-item--positive:hover {
   background-color: lighten($positive, 10);
   border: none;
+}
+
+.main-menu-item--small {
+  height: 20vh;
 }

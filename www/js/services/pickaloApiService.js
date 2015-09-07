@@ -1,6 +1,7 @@
 app.service('PickaloApiService', ['$http', '$q',
   function($http, $q) {
-    var server = 'http://67e90eb3.ngrok.com';
+    // var server = 'http://pickalo.herokuapp.com';
+    var server = 'http://58da6b8b.ngrok.com';
     var q = $q;
     return {
       postForm: function(form) {

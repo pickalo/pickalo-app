@@ -9,33 +9,18 @@
   <ion-content>
 
     <label class="item item-input item-stacked-label">
-      <span class="input-label">Question</span>
       <input ng-model="form.question" type="text" placeholder="type here...">
     </label>
 
-    <h3>{{images.length}} images added.</h3>
+    <h3 class="images-added">{{images.length}} images added.</h3>
 
-    <!-- <div class="row" ng-repeat="image in images" ng-if="$index % 2 === 0">
-      <div class="col col-50" ng-if="$index < images.length">
-        <img ng-src="data:image/jpeg;base64,{{images[$index].imgUrl}}" width="100%" />
-      </div>
-      <div class="col col-50" ng-if="$index + 1 < images.length">
-        <img ng-src="data:image/jpeg;base64,{{images[$index + 1].imgUrl}}" width="100%" />
-      </div>
-      <div class="col col-50" ng-if="$index + 2 < images.length">
-        <img ng-src="data:image/jpeg;base64,{{images[$index + 2].src}}" width="100%" />
-      </div>
-      <div class="col col-50" ng-if="$index + 3 < images.length">
-        <img ng-src="data:image/jpeg;base64,{{images[$index + 3].imgUrl}}" width="100%" />
-      </div>
-    </div> -->
   </ion-content>
 
   <div class="form-footer">
-    <button class="button button-block button-positive" ng-click="openCamera()">
+    <button class="button button-block button-royal btn-form" ng-click="openCamera()">
       New picture
     </button>
-    <button class="button button-block button-positive" ng-click="postForm()">
+    <button class="button button-block button-positive btn-form" ng-click="postForm()">
       Submit
     </button>
   </div>

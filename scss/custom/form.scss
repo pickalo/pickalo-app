@@ -3,3 +3,24 @@
   bottom: 0;
   width: 100%;
 }
+
+.item-input {
+  margin-top: 15vh;
+
+  > input {
+    text-align: center;
+    font-size: 1.5rem;
+    height: 3rem;
+  }
+}
+
+.images-added {
+  text-align: center;
+}
+
+.form-footer {
+  .button {
+    font-size: 2rem;
+    height: 6rem;
+  }
+}

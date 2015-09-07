@@ -5,8 +5,8 @@ in ionic's _variables.scss file.
 For example, you might change some of the default colors:
 */
 
-$light:                           #3c3e87 !default;
-$stable:                          #3c3e87 !default;
+$light:                           #EFF1F5 !default;
+$stable:                          #EFF1F5 !default;
 $positive:                        #3ea455 !default;
 $calm:                            #11c1f3 !default;
 $balanced:                        #33cd5f !default;
@@ -28,13 +28,5 @@ ion-content {
 
   label.item {
     border: none;
-  }
-
-  .input-label {
-    color: white;
-  }
-
-  input:focus {
-    color: white;
   }
 }
